@@ -1,0 +1,184 @@
+@media(max-width: 1076px){
+
+/* ---------- 1.Header (Start) ---------- */
+
+.header-nav{
+    display: none;
+}
+
+.header-menu{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    border: none;
+}
+
+.header-nav{
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    width: 30%;
+    min-width: 200px;
+    height: 90vh;
+    z-index: 1000;
+    padding: 50px;
+    background-color: gray;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(120%);
+    overflow: hidden;
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.header-nav--active{
+    display: block;
+    visibility: visible;
+    transform: none;
+}
+
+.nav-ul{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-a{
+    color: white;
+}
+
+.header-menu--active
+.header-menu_span{
+    transition: transform .3s ease-in-out;
+}
+
+.header-menu--active .header-menu_span:nth-child(1){
+        transform: rotate(45deg);
+        top: calc(50% - 1.5px);
+}
+
+.header-menu--active .header-menu_span:nth-child(2){
+    display: none;
+}
+
+.header-menu--active .header-menu_span:nth-child(3){
+    transform: rotate(-45deg);
+    top: calc(50% - 1.5px);
+}
+
+/* ---------- 1.Header (End) ---------- */
+
+/* ---------- 2.Main (Start) ---------- */
+
+.main-div{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-h2{
+    margin-bottom: 40px;
+}
+
+.main-div_cards{
+    width: 40%;
+}
+
+
+
+/* ---------- 2.Main (End) ---------- */
+
+}
+
+@media(max-width: 812px){
+
+
+    
+    /* ---------- 1.Main (Start) ---------- */
+
+    .card{
+        width: 40%;
+        padding: 5px;
+    }
+
+    .main-h1,
+    .main-h2_cards{
+        font-size: 40px;
+    }
+
+    .main-p_first,
+    .main-p_last{
+        font-size: 12px;
+    }
+
+    .main-div_cards{
+        height: 30vh;
+    }
+
+    /* ---------- 1.Main (End) ---------- */
+    
+}
+
+@media(max-width: 576px){
+
+    /* ---------- 1.Main (Start) ---------- */
+
+    .main-div{
+        padding-top: 30px;
+    }
+
+    .main-h1,
+    .main-h2_cards{
+        font-size: 30px;
+    }
+
+    .main-p_first,
+    .main-p_last{
+        font-size: 10px;
+    }
+
+    .main-div_cards{
+        height: 30vh;
+    }
+
+    /* ---------- 1.Main (End) ---------- */
+    
+}
+
+@media(max-width: 450px){
+
+    /* ---------- 1.Header (Start) ---------- */
+
+    header,
+    .header-div{
+        height: 7vh;
+    }
+
+    .header-img{
+        height: 6vh;
+    }
+
+    /* ---------- 1.Header (End) ---------- */
+
+    /* ---------- 2.Main (Start) ---------- */
+
+    .cards-div{
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 0;
+    }
+
+    .card:nth-child(2n+1){
+        margin: 0;
+    }
+
+    .main-p_first,
+    .main-p_last,
+    .main-h2_cards{
+        width: 100px;
+        text-align: left;
+    }
+
+    /* ---------- 2.Main (End) ---------- */
+    
+}
